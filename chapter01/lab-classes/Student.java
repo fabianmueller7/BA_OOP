@@ -1,4 +1,4 @@
-package Student;
+ 
 /**
  * The Student class represents a student in a student administration system.
  * It holds the student details relevant in our context.
@@ -23,6 +23,7 @@ public class Student
         name = fullName;
         id = studentID;
         credits = 0;
+        
     }
 
     /**

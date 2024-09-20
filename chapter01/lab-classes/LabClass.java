@@ -1,5 +1,5 @@
 import java.util.*;
-package Student;
+ 
 
 /**
  * The LabClass class represents an enrolment list for one lab class. It stores
@@ -27,6 +27,7 @@ public class LabClass
         timeAndDay = "unknown";
         students = new ArrayList<Student>();
         capacity = maxNumberOfStudents;
+        
     }
 
     /**

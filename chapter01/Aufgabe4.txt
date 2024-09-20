@@ -1,0 +1,60 @@
+Klasse Produkt
+Attribute:
+    Preis
+    Mehrwertssteuer
+    Verfügbarkeit
+    Abteilung
+    Reduziert
+    Ablaufdatum
+
+Methoden:
+    Produkt
+    Aufstocken
+    Verkaufen
+
+
+Klasse Esswaren
+Attribute:
+    Gewicht
+    Ablaufdatum
+    Zubereitsungsart
+    Zubereitungsdauer
+    Menge (Wiederverwendbar, Mehrere Kapseln?)
+    Lagerungsart
+
+Methoden:
+    Zubereiten
+    
+
+
+
+MClass Rote Bohnen
+Attribute:
+    Ablaufdatum
+    Menge
+    Preis
+    Marke
+    Herkunft
+    Kochdauer
+
+
+Methoden:
+    Öffnen
+    Kochen
+    Verkaufen
+    
+
+
+
+
+Nivea Men Power Refre.
+Attribute:
+    Marke
+    Preis
+    Inhalt
+    Gewicht
+    Farbe
+
+Methoden
+    Füllen
+    Leeren
