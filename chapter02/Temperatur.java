@@ -1,4 +1,4 @@
-import java.util.Date;
+import java.util.*;
 
 /**
  * Write a description of class Temperatur here.
