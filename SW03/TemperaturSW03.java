@@ -1,12 +1,10 @@
-import java.util.*;
-
 /**
  * Write a description of class Temperatur here.
  *
  * @author Fabian Mueller
  * @version 0.0.1
  */
-public class Temperatur
+public class TemperaturSW03
 {
 
 
@@ -16,39 +14,43 @@ public class Temperatur
     /**
      * Constructor for objects of class Temperatur
      */
-    public Temperatur(float startUmgebungstemperaturInCelsius)
+    public TemperaturSW03(float startUmgebungstemperaturInCelsius)
     {
         // initialise instance variables
-        setUmgebungstemperaturInCelsius(startUmgebungstemperaturInCelsius);
+        this.setUmgTempInCelsius(startUmgebungstemperaturInCelsius);
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public float getUmgebungstemperaturInCelsius() {
+    public float getUmgTempInCelsius() {
         return this.UmgebungstemperaturInCelsius;
     }
 
-    public float getUmgebungstemperaturInKelvin() {
+    public float getUmgTempInKelvin() {
         return this.UmgebungstemperaturInCelsius + 273.15f;
     }
 
-    public float getUmgebungstemperaturInFahrenheit() {
+    public float getUmgTempInFahrenheit() {
         return this.UmgebungstemperaturInCelsius * 1.8f + 32;
     }
 
-    public void setUmgebungstemperaturInCelsius(float umgebungstemperaturInCelsius) {
-        this.UmgebungstemperaturInCelsius = umgebungstemperaturInCelsius;
+    public void setUmgTempInCelsius(float umgTempInCelsius) {
+        this.UmgebungstemperaturInCelsius = umgTempInCelsius;
     }
 
-    public void setUmgebungstemperaturInKelvin(float umgebungstemperaturInKelvin)  {
-        this.UmgebungstemperaturInCelsius = umgebungstemperaturInKelvin - 273.15f;
+    public void setUmgTempInKelvin(float umgTempInKelvin) {
+        this.UmgebungstemperaturInCelsius = umgTempInKelvin - 273.15f;
     }
 
-    public void setUmgebungstemperaturInFahrenheit(float umgebungstemperaturInFahrenheit)  {
-        this.UmgebungstemperaturInCelsius = (umgebungstemperaturInFahrenheit - 32)*(5/9);
+    public void setUmgTempInFahrenheit(float umgTempInFahrenheit) {
+        this.UmgebungstemperaturInCelsius = (umgTempInFahrenheit - 32)*(5/9);
+    }
+
+    public String getAggregatszustand(String element) {
+
+        return switch (element) {
+            case "Pb" -> "fest";
+            case "Hg" -> "fluessig";
+            case "N" -> "gasfoermig";
+            default -> "unbekannt";
+        };
     }
 }
