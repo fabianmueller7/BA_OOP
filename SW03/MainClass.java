@@ -10,5 +10,7 @@ public class MainClass {
         //Demo.incFloatIncremental(0.9d, 1.0f, 0.000025d);
 
         Demo.printBox(10,5);
+
+        Demo.maxN(1,9,10,15,6,4);
     }
 }

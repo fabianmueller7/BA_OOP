@@ -83,12 +83,20 @@ public class Demo {
                     if(j == width) {
                         System.out.println(" ");
                     }
-
                 }
             }
 
         } else {
             System.out.println("Your Box is too big");
         }
+    }
+
+    public static void maxN(int ... args) {
+        int max = args[0];
+        for (int i = 1; i < args.length; i++) {
+            int temp = args[i];
+            max = Math.max(max,temp);
+        }
+        System.out.println("Max: " + max);
     }
 }
