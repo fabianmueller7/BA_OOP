@@ -32,18 +32,35 @@ public class TemperaturSW03
         return this.TempC * 1.8f + 32;
     }
 
+    /**
+     *
+     * @param set temp in Celsius.
+     */
     public void setUmgTempInCelsius(float tempC) {
         this.TempC = tempC;
     }
 
+    /**
+     *
+     * @param set new temp in kelvin.
+     */
     public void setUmgTempInKelvin(float tempK) {
         this.TempC = tempK - 273.15f;
     }
 
+    /**
+     *
+     * @param Set new temp in fahrenheit.
+     */
     public void setUmgTempInFahrenheit(float tempF) {
         this.TempC = (tempF - 32)*(5/9);
     }
 
+    /**
+     *
+     * @param Element your trying to get the Aggregationszustand.
+     * @return Returns string of the Aggregationszustand.
+     */
     public String getAggregatszustand(String element) {
 
         return switch (element) {
