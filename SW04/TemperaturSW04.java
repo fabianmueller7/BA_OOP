@@ -4,7 +4,7 @@
  * @author Fabian Mueller
  * @version 0.0.1
  */
-public class TemperaturSW03
+public class TemperaturSW04
 {
 
 
@@ -14,7 +14,7 @@ public class TemperaturSW03
     /**
      * Constructor for objects of class Temperatur
      */
-    public TemperaturSW03(float startTempC)
+    public TemperaturSW04(float startTempC)
     {
         // initialise instance variables
         this.setUmgTempInCelsius(startTempC);
