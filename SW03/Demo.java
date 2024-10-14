@@ -34,7 +34,13 @@ public class Demo {
     }
 
     public int max2(int a, int b, int c) {
-        return Math.max(Math.max(a,b),c);
+
+        if (a >= b && a > c) {
+            return a;
+        } else if (b >= c) {
+            return b;
+        }
+        return c;
     }
 
     public static void outputNumbersFromToFOR(int start, int end) {
