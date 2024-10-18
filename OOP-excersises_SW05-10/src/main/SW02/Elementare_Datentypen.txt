@@ -1,0 +1,27 @@
+Aufgaben 2.3
+
+b)
+
+2147483647
+    2147483647   (int)
+2147483648
+    Error: integer number too large
+2147483647+1
+    -2147483648   (int) //Das erste Bit bei INT legt fest, ob dieser positiv oder negativ ist. Wird dieses auf 0 gesetzt, ist dieses negativ.
+-2147483649
+    Error: integer number too large
+
+c)
+3.4028235e38f
+    3.4028235E38   (float)
+3.4028235e38f +1f
+    3.4028235E38   (float)
+    Float ist ein ungenauer Datentyp, alles nach der 7. Stelle wird "abgeschnitten".
+
+d)
+2+5/2
+    4   (int)
+2+5/2f
+    4.5   (float)
+2+  (float) 5/2
+    4.5   (float)
