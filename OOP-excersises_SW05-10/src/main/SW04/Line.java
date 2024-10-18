@@ -5,7 +5,7 @@ public class Line {
     private Point p1;
     private Point p2;
 
-    Line(x1,y1,x2,y1){
+    Line(int x1,int y1,int x2,int y2){
         p1.x = x1;
         p1.y = y1;
         p2.x = x2;
