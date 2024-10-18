@@ -1,5 +1,10 @@
 # Java Projekt-Template fuer OOP/PLAB, AD, VSK, SWDA und DEVOPS
 
+## Docker starten
+```
+./devshell.command
+```
+
 ## Zweck
 Dieses Projekt dient in den Modulen OOP/PLAB, AD, VSK, SWDA und DEVOPS als 
 Vorlage fuer Java-Projekte. Es nutzt einen auf 
