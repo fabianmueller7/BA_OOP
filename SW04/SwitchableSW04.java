@@ -4,7 +4,7 @@
  * @param Element your trying to get the Aggregationszustand.
  * @return Returns string of the Aggregationszustand.
  */
-public interface Switchable {
+public interface SwitchableSW04 {
 
     /**
      * Call this method to set the switch ON.

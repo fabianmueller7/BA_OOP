@@ -1,10 +1,12 @@
+package bluej_project;
+
 /**
  * Write a description of class Temperatur here.
  *
  * @author Fabian Mueller
  * @version 0.0.1
  */
-public class TemperaturSW03
+public class TemperaturSW04BlueJ
 {
 
 
@@ -14,7 +16,7 @@ public class TemperaturSW03
     /**
      * Constructor for objects of class Temperatur
      */
-    public TemperaturSW03(float startUmgebungstemperaturInCelsius)
+    public TemperaturSW04BlueJ(float startUmgebungstemperaturInCelsius)
     {
         // initialise instance variables
         this.setUmgTempInCelsius(startUmgebungstemperaturInCelsius);

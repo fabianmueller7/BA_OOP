@@ -1,4 +1,4 @@
-public class  Engine implements  Switchable {
+public class  Engine implements  SwitchableSW04 {
 
     private boolean running;
     private int rpm;
