@@ -25,5 +25,14 @@ public class main {
         countingSwitchableObj.switchOn();
         System.out.println("SwitchCounter: " + countingSwitchableObj.getSwitchCounter());
 
+        TemperaturSW05 tempObj = new TemperaturSW05(20);
+        Element elementObj = new Element("Water", 0,100);
+        System.out.println(elementObj.getName());
+        System.out.println("Current state 20C:" + tempObj.getAggregatszustand(elementObj).toString());
+        tempObj.setUmgTempInCelsius(110);
+        System.out.println("Current state 110C:" + tempObj.getAggregatszustand(elementObj).toString());
+        tempObj.setUmgTempInCelsius(-10);
+        System.out.println("Current state -10C:" + tempObj.getAggregatszustand(elementObj).toString());
+
     }
 }
