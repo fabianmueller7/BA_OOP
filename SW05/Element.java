@@ -1,4 +1,4 @@
-public abstract class Element {
+public class Element {
 
     private String name;
     private float freezingTemp;

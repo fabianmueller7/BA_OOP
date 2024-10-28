@@ -1,4 +1,4 @@
-public class Car implements SwitchableSW04 {
+public class Car implements Switchable {
 
     private boolean running;
     private int speed;

@@ -2,14 +2,14 @@ import java.awt.*;
 
 public class Line {
 
-    private Point p1 = new Point();
-    private Point p2 = new Point();
+    private Point p1;
+    private Point p2;
 
-    Line(int x1,int y1 ,int x2 ,int y2){
-        this.p1.x = x1;
-        this.p1.y = y1;
-        this.p2.x = x2;
-        this.p2.y = y2;
+    Line(int x1,int y1,int x2,int y2){
+        p1.x = x1;
+        p1.y = y1;
+        p2.x = x2;
+        p2.y = y2;
     }
 
     public Point getP1() {

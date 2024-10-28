@@ -1,4 +1,4 @@
-public class Light implements SwitchableSW04 {
+public class Light implements Switchable {
     private boolean on;
 
     @Override

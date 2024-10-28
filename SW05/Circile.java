@@ -3,8 +3,8 @@ import java.awt.*;
 public class Circile extends Shape{
     private int diameter;
 
-    public Circile(int x, int y, int diameter){
-        super(x, y);
+    public Circile(int x, int y,String name , int diameter){
+        super(x, y, name);
         this.diameter = diameter;
     }
 

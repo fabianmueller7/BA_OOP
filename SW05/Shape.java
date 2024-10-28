@@ -1,13 +1,15 @@
 import java.awt.*;
 
-public abstract class Shape {
+public abstract class Shape implements Named{
 
     private int x;
     private int y;
+    private String name;
 
-    protected Shape(int x, int y){
+    protected Shape(int x, int y, String name) {
         this.x = x;
         this.y = y;
+        this.name = name;
     }
 
     public int getX(){
@@ -26,4 +28,12 @@ public abstract class Shape {
     public abstract int getPerimeter();
 
     public abstract int getArea();
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return this.name;
+    }
 }
