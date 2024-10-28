@@ -38,4 +38,20 @@ public class Person {
     public String toString() {
         return "ID: " + ID + ", Lastname: " + Lastname + ", Firstname: " + Firstname;
     }
+
+    @Override
+    public int hashCode() {
+        return this.toString().hashCode();
+    }
+
+    @Override
+    public boolean equals(final Object obj) {
+        if(obj == this) {
+            return true;
+        }
+        return (obj instanceof Person p)
+            && (p.Firstname.equals(this.Firstname))
+            && (p.Lastname.equals(this.Lastname))
+                && (p.ID == this.ID);
+    }
 }
