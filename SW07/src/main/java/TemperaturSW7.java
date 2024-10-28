@@ -74,4 +74,9 @@ public class TemperaturSW7
     public int compareTo(TemperaturSW7 other) {
         return Float.compare(this.getUmgTempInCelsius(), other.getUmgTempInCelsius());
     }
+
+    @Override
+    public String toString() {
+        return "TemperaturSW7{" + "TempC=" + this.TempC + '}';
+    }
 }

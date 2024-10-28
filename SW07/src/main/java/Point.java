@@ -82,6 +82,11 @@ public class Point {
                 && (p.getX() == this.x) && (p.getY() == this.y);
     }
 
+    @Override
+    public String toString() {
+        return "(" + this.x + ", " + this.y + ")";
+    }
+
     public int compareTo(Point other) {
         return Long.compare(this.x, other.x) + Long.compare(this.y, other.y);
     }
