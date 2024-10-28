@@ -81,4 +81,8 @@ public class Point {
         return (obj instanceof Point p)
                 && (p.getX() == this.x) && (p.getY() == this.y);
     }
+
+    public int compareTo(Point other) {
+        return Long.compare(this.x, other.x) + Long.compare(this.y, other.y);
+    }
 }

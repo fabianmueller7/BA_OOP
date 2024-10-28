@@ -54,4 +54,8 @@ public class Person {
             && (p.Lastname.equals(this.Lastname))
                 && (p.ID == this.ID);
     }
+
+    public int compareTo(Person other) {
+        return Long.compare(this.ID, other.ID);
+    }
 }

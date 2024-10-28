@@ -46,4 +46,11 @@ class PersonTest {
     }
 
 
+    @Test
+    void compareTo() {
+
+        assertEquals(0, this.person.compareTo(this.person));
+        Person random = new Person(11,"Peter","Henry");
+        assertNotEquals(0, this.person.compareTo(random));
+    }
 }

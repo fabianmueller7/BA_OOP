@@ -56,4 +56,22 @@ public class TemperaturSW7
             return aggregateState.solid;
         }
     }
+
+    @Override
+    public int hashCode() {
+        return this.toString().hashCode();
+    }
+
+    @Override
+    public boolean equals(final Object obj) {
+        if(obj == this) {
+            return true;
+        }
+        return (obj instanceof TemperaturSW7 temp)
+                && (temp.getUmgTempInCelsius() == this.TempC);
+    }
+
+    public int compareTo(TemperaturSW7 other) {
+        return Float.compare(this.getUmgTempInCelsius(), other.getUmgTempInCelsius());
+    }
 }
