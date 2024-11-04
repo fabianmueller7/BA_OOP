@@ -22,16 +22,16 @@ public class Element {
         return vaporizedTemp;
     }
 
-    public aggregateState getAggregatszustand(Element element, int tempC) {
+    public String getAggregatszustand(Element element, int tempC) {
 
         if(tempC > element.getVaporizedTemp()) {
-            return aggregateState.gas;
+            return aggregateState.gas.getString();
         }
         else if(tempC < element.getVaporizedTemp() && element.getFreezingTemp() < tempC) {
-            return aggregateState.liquid;
+            return aggregateState.liquid.getString();
         }
         else {
-            return aggregateState.solid;
+            return aggregateState.solid.getString();
         }
     }
 
