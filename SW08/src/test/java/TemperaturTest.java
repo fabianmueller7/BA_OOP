@@ -3,15 +3,15 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class TemperaturSW08Test {
+class TemperaturTest {
 
-    private TemperaturSW08 temp;
-    private TemperaturSW08 temp2;
+    private Temperatur temp;
+    private Temperatur temp2;
 
     @BeforeEach
     void setUp() {
-        this.temp = new TemperaturSW08(100);
-        this.temp2 = new TemperaturSW08(200);
+        this.temp = new Temperatur(100);
+        this.temp2 = new Temperatur(200);
     }
 
     @Test
@@ -34,21 +34,21 @@ class TemperaturSW08Test {
 
     @Test
     void covnertCelsiusToKelvin() {
-        assertEquals(293.15f,TemperaturSW08.covnertCelsiusToKelvin(20f));
+        assertEquals(293.15f, Temperatur.covnertCelsiusToKelvin(20f));
     }
 
     @Test
     void convertKelvintoCesius() {
-        assertEquals(20f, TemperaturSW08.convertKelvintoCesius(293.15f));
+        assertEquals(20f, Temperatur.convertKelvintoCesius(293.15f));
     }
 
     @Test
     void convertCelsiustoFahrenheit() {
-        assertEquals(50f, TemperaturSW08.convertCelsiustoFahrenheit(10f));
+        assertEquals(50f, Temperatur.convertCelsiustoFahrenheit(10f));
     }
 
     @Test
     void convertFahrenheitToCelsius() {
-        assertEquals(10f, TemperaturSW08.convertFahrenheitToCelsius(50f));
+        assertEquals(10f, Temperatur.convertFahrenheitToCelsius(50f));
     }
 }

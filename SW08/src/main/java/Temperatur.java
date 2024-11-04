@@ -4,7 +4,7 @@
  * @author Fabian Mueller
  * @version 0.0.1
  */
-public class TemperaturSW08
+public final class Temperatur
 {
 
 
@@ -15,13 +15,12 @@ public class TemperaturSW08
     /**
      * Constructor for objects of class Temperatur
      */
-    public TemperaturSW08(float startTempC)
+    public Temperatur(float startTempC)
     {
-        // initialise instance variables
         this.setCelsius(startTempC);
     }
 
-    public TemperaturSW08(TemperaturSW08 temperaturobj) {
+    public Temperatur(Temperatur temperaturobj) {
         this.setCelsius(temperaturobj.getCelsius());
     }
 
@@ -30,11 +29,11 @@ public class TemperaturSW08
     }
 
     public float getKelvin() {
-        return TemperaturSW08.covnertCelsiusToKelvin(this.getCelsius());
+        return Temperatur.covnertCelsiusToKelvin(this.getCelsius());
     }
 
     public float getFahrenheit() {
-        return TemperaturSW08.convertCelsiustoFahrenheit(this.getCelsius());
+        return Temperatur.convertCelsiustoFahrenheit(this.getCelsius());
     }
 
     public void setCelsius(float tempC) {
@@ -42,7 +41,7 @@ public class TemperaturSW08
     }
 
     public void setKelvin(float tempK) {
-        this.TempC = tempK - TemperaturSW08.KELVIN_OFFSET;
+        this.TempC = tempK - Temperatur.KELVIN_OFFSET;
     }
 
     public void setFahrenheit(float tempF) {
@@ -75,11 +74,11 @@ public class TemperaturSW08
         if(obj == this) {
             return true;
         }
-        return (obj instanceof TemperaturSW08 temp)
+        return (obj instanceof Temperatur temp)
                 && (temp.getCelsius() == this.TempC);
     }
 
-    public int compareTo(TemperaturSW08 other) {
+    public int compareTo(Temperatur other) {
         return Float.compare(this.getCelsius(), other.getCelsius());
     }
 
