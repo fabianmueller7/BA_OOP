@@ -31,7 +31,7 @@ public class TemperaturVerlauf {
     }
 
     public void add(Temperatur temperatur, int position) {
-        this.temperaturen.add(position,temperatur);
+        this.temperaturen.add(position, temperatur);
     }
 
     public boolean remove(Temperatur temperatur) {
@@ -47,12 +47,12 @@ public class TemperaturVerlauf {
     }
 
     public float getMaxTemperatur() {
-        if(this.getCount() == 0) {
+        if (this.getCount() == 0) {
             return 0f;
         }
         float maxTemperatur = this.getTemperatur(0).getCelsius();
         for (int i = 1; i < this.temperaturen.size(); i++) {
-            if(maxTemperatur < getTemperatur(i).getCelsius()) {
+            if (maxTemperatur < getTemperatur(i).getCelsius()) {
                 maxTemperatur = getTemperatur(i).getCelsius();
             }
         }
@@ -60,12 +60,12 @@ public class TemperaturVerlauf {
     }
 
     public float getMinTemperatur() {
-        if(this.getCount() == 0) {
+        if (this.getCount() == 0) {
             return 0f;
         }
         float minTemperatur = this.getTemperatur(0).getCelsius();
         for (int i = 1; i < this.temperaturen.size(); i++) {
-            if(minTemperatur > getTemperatur(i).getCelsius()) {
+            if (minTemperatur > getTemperatur(i).getCelsius()) {
                 minTemperatur = getTemperatur(i).getCelsius();
             }
         }
@@ -73,7 +73,7 @@ public class TemperaturVerlauf {
     }
 
     public float getDurchschnittsTemperatur() {
-        if(this.getCount() == 0) {
+        if (this.getCount() == 0) {
             return 0f;
         }
         double sum = 0;
@@ -82,10 +82,4 @@ public class TemperaturVerlauf {
         }
         return (float) sum / (float) this.temperaturen.size();
     }
-
-
-
-
-
-
 }
