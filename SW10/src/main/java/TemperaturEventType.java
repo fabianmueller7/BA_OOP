@@ -1,6 +1,6 @@
-public enum TemperaturEvent {
+public enum TemperaturEventType {
 
-    TemperaturNormal("Normal"), TemperaturMax("Max"), TemperaturMin("Min");
+    TemperaturMax("Max"), TemperaturMin("Min");
 
     // declaring private variable for getting values
     private String action;
@@ -12,7 +12,7 @@ public enum TemperaturEvent {
     }
 
     // enum constructor - cannot be public or protected
-    private TemperaturEvent(String action)
+    private TemperaturEventType(String action)
     {
         this.action = action;
     }

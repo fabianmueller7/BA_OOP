@@ -64,7 +64,7 @@ public class TemperaturVerlauf {
                 TemperaturEventType tempcase = TemperaturEventType.TemperaturMax;
                 if (oldMin != newMin) {
                     tempcase = TemperaturEventType.TemperaturMin;
-                    final TemperaturChangeEventMin tcEvent = new TemperaturChangeEventMin(
+                    final PropertyChangeEvent tcEvent = new PropertyChangeEvent(
                             this, tempcase.getAction(), oldMin, newMin) {
                     };
                     this.firePropertyChangeEvent(tcEvent);
@@ -72,7 +72,7 @@ public class TemperaturVerlauf {
 
                 if (oldMax != newMax) {
                     tempcase = TemperaturEventType.TemperaturMax;
-                    final TemperaturChangeEventMax tcEvent = new TemperaturChangeEventMax(
+                    final PropertyChangeEvent tcEvent = new PropertyChangeEvent(
                             this, tempcase.getAction(), oldMax, newMax) {
                     };
                     this.firePropertyChangeEvent(tcEvent);
