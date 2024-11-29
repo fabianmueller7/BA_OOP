@@ -1,4 +1,5 @@
 import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -55,17 +56,19 @@ public class TemperaturVerlauf {
             if (oldMax != newMax || oldMin != newMin) {
 
                 TemperaturEvent tempcase = TemperaturEvent.TemperaturMax;
-                float oldValue =  oldMax;
-                float newValue = newMax;
-
                 if (oldMin != newMin) {
                     tempcase = TemperaturEvent.TemperaturMin;
-                    oldValue = oldMin;
-                    newValue = newMin;
+                    final PropertyChangeEvent motorEvent = new PropertyChangeEvent(
+                            this, tempcase.getAction(), oldMin, newMin);
+                    this.firePropertyChangeEvent(motorEvent);
                 }
-                final PropertyChangeEvent motorEvent = new PropertyChangeEvent(
-                        this, tempcase.getAction(), oldValue, newValue);
-                this.firePropertyChangeEvent(motorEvent);
+
+                if (oldMax != newMax) {
+                    tempcase = TemperaturEvent.TemperaturMax;
+                    final PropertyChangeEvent motorEvent = new PropertyChangeEvent(
+                            this, tempcase.getAction(), oldMax, newMax);
+                    this.firePropertyChangeEvent(motorEvent);
+                }
             }
         }
     }

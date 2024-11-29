@@ -1,6 +1,6 @@
 public enum TemperaturEvent {
 
-    TemperaturNormal("Max"), TemperaturMax("Max"), TemperaturMin("Min");
+    TemperaturNormal("Normal"), TemperaturMax("Max"), TemperaturMin("Min");
 
     // declaring private variable for getting values
     private String action;

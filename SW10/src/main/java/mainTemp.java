@@ -9,10 +9,9 @@ public class mainTemp {
         Scanner scanner = new Scanner(System.in);
         TemperaturVerlauf temperaturVerlauf = new TemperaturVerlauf();
 
-        User listener = new User("Listener1");
-        temperaturVerlauf.addPropertyChangeListener(listener);
-
         final Logger LOG = LoggerFactory.getLogger(main.class);
+        User listener = new User("listener1");
+        temperaturVerlauf.addPropertyChangeListener(listener);
 
         do {
             System.out.println("Bitte Temperatur eingeben (oder 'exit' zum Beenden): ");

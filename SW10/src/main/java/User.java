@@ -1,4 +1,5 @@
 import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
 
 public class User implements PropertyChangeListener {
 
@@ -12,7 +13,20 @@ public class User implements PropertyChangeListener {
         return name;
     }
 
+    public void propertyChangeMax(PropertyChangeEvent evt) {
+        System.out.println(evt.getPropertyName() + ": " + evt.getNewValue());
+    }
+
+    public void propertyChangeMin(PropertyChangeEvent evt) {
+        System.out.println(evt.getPropertyName() + ": " + evt.getNewValue());
+    }
+
+    @Override
     public void propertyChange(PropertyChangeEvent evt) {
-        System.out.println(  this.getName() + ": " + evt.getPropertyName() + ": " + evt.getNewValue());
+        if(evt.getPropertyName().equals("Max")) {
+            this.propertyChangeMax(evt);
+        } else {
+            this.propertyChangeMin(evt);
+        }
     }
 }
