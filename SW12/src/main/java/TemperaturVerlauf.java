@@ -1,10 +1,7 @@
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.EmptyStackException;
-import java.util.List;
+import java.util.*;
 
 public class TemperaturVerlauf implements TemperaturVerlaufInterface{
 
@@ -99,37 +96,21 @@ public class TemperaturVerlauf implements TemperaturVerlaufInterface{
         if (this.getCount() == 0) {
             return null;
         }
-        Messpunkt maxTemperatur = this.getMesspunkt(0);
-        for (int i = 1; i < this.messpunkte.size(); i++) {
-            if (maxTemperatur.getCelsius() < getMesspunkt(i).getCelsius()) {
-                maxTemperatur = getMesspunkt(i);
-            }
-        }
-        return maxTemperatur;
+        return this.messpunkte.stream().max((m1, m2) -> Float.compare(m1.getTemperatur().getCelsius(), m2.getTemperatur().getCelsius())).get();
     }
 
     public Messpunkt getMinTemperatur() {
         if (this.getCount() == 0) {
             return null;
         }
-        Messpunkt minTemperatur = this.getMesspunkt(0);
-        for (int i = 1; i < this.messpunkte.size(); i++) {
-            if (minTemperatur.getCelsius() > getMesspunkt(i).getCelsius()) {
-                minTemperatur = getMesspunkt(i);
-            }
-        }
-        return minTemperatur;
+        return this.messpunkte.stream().min((m1, m2) -> Float.compare(m1.getTemperatur().getCelsius(), m2.getTemperatur().getCelsius())).get();
     }
 
     public float getDurchschnittsTemperatur() {
         if (this.getCount() == 0) {
             return 0f;
         }
-        double sum = 0;
-        for (Messpunkt temperatur : this.messpunkte) {
-            sum += temperatur.getCelsius();
-        }
-        return (float) sum / (float) this.messpunkte.size();
+        return  (float) this.messpunkte.stream().mapToDouble(m -> m.getTemperatur().getCelsius()).average().orElse(0f);
     }
 
     private void firePropertyChangeEvent(final TemperaturEventInterface pcEvent) {
