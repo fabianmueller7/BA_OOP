@@ -1,0 +1,4 @@
+SW11
+
+1.3c)
+Es verschiebt das Offset und alle nachfolgenden Zahlen werden unlesbar.
