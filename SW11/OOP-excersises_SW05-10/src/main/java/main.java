@@ -21,7 +21,7 @@ public class main {
             input = scanner.next();
             try{
                 float value = Float.valueOf(input);
-                temperaturVerlauf.add(Temperatur.createFromCelsius(value));
+                temperaturVerlauf.add(Messpunkt.neuerMesspunkt(Temperatur.createFromCelsius(value)));
             } catch (Exception e) {
 
                 if(input.equals("exit")) {
@@ -34,7 +34,7 @@ public class main {
 
         } while (true);
 
-        tempCSVHandler.StoreToCsv(temperaturVerlauf.getTemperaturen(),"/Users/muellefa/repos/BA_OOP/SW11/OOP-excersises_SW05-10/src/main/java/TemperaturSave2.csv");
+        tempCSVHandler.StoreToCsv(temperaturVerlauf.getMesspunkte(),"/Users/muellefa/repos/BA_OOP/SW11/OOP-excersises_SW05-10/src/main/java/TemperaturSave2.csv");
 
         LOG.info("Einträge: " + temperaturVerlauf.getCount());
         LOG.info("\n"+ temperaturVerlauf.toString());

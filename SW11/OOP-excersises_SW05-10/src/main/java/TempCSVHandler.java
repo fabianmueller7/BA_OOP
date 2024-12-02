@@ -21,12 +21,12 @@ public class TempCSVHandler {
         String[]  temps = this.splitCSV(stringBuffer, numberOfColumns, 2);
 
         for(int i = 0; i<temps.length; i++) {
-            temperaturVerlauf.add(Temperatur.createFromCelsius(Float.valueOf(temps[i]), dates[i]));
+            temperaturVerlauf.add(new Messpunkt( dates[i],Temperatur.createFromCelsius(Float.valueOf(temps[i]))));
         }
         return temperaturVerlauf;
     }
 
-    public void StoreToCsv(final Collection<Temperatur> temps, final String file) {
+    public void StoreToCsv(final Collection<Messpunkt> temps, final String file) {
         try {
             DataOutputStream dos = new DataOutputStream(new FileOutputStream(file));
 

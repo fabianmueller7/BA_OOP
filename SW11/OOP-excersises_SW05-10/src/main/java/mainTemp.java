@@ -1,3 +1,4 @@
+import java.time.LocalDateTime;
 import java.util.Scanner;
 import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;
@@ -21,7 +22,7 @@ public class mainTemp {
             input = scanner.next();
             try{
                 float value = Float.valueOf(input);
-                temperaturVerlauf.add(Temperatur.createFromCelsius(value));
+                temperaturVerlauf.add(Messpunkt.neuerMesspunkt(Temperatur.createFromCelsius(value)));
             } catch (Exception e) {
 
                 if(input.equals("exit")) {

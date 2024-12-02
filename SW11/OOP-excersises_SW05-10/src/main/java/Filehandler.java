@@ -39,7 +39,7 @@ public class Filehandler {
             DataOutputStream dos = new DataOutputStream(new FileOutputStream(file));
             dos.writeInt(temperaturVerlauf.getCount());
 
-            temperaturVerlauf.getTemperaturen().forEach(temperatur -> {
+            temperaturVerlauf.getMesspunkte().forEach(temperatur -> {
                 try {
                     dos.writeFloat(temperatur.getCelsius());
                 } catch (IOException e) {

@@ -1,7 +1,3 @@
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-
 /**
  * Write a description of class Temperatur here.
  *
@@ -15,7 +11,6 @@ public final class Temperatur
     // instance variables - replace the example below with your own
     private float TempC = 20;
     public static final float KELVIN_OFFSET = 273.15f;
-    private LocalDateTime date;
 
     /**
      * Constructor for objects of class Temperatur
@@ -23,13 +18,6 @@ public final class Temperatur
     private Temperatur(float startTempC)
     {
         this.setCelsius(startTempC);
-        this.date = LocalDateTime.now();
-    }
-
-    private Temperatur(float startTempC, LocalDateTime date)
-    {
-        this.setCelsius(startTempC);
-        this.date = date;
     }
 
     public Temperatur(Temperatur temperaturobj) {
@@ -40,17 +28,9 @@ public final class Temperatur
         return new Temperatur(tempC);
     }
 
-    public static Temperatur createFromCelsius(final float tempC, final LocalDateTime date) {
-        return new Temperatur(tempC,date);
-    }
-
     public static Temperatur createFromKelvin(final float tempKelvin) {
         float tempC = Temperatur.convertKelvinToCelsius(tempKelvin);
         return new Temperatur(tempC);
-    }
-
-    public LocalDateTime getDate() {
-        return this.date;
     }
 
     public float getCelsius() {
