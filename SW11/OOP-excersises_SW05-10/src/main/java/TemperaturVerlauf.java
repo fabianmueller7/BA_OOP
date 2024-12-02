@@ -6,7 +6,7 @@ import java.util.Collection;
 import java.util.EmptyStackException;
 import java.util.List;
 
-public class TemperaturVerlauf {
+public class TemperaturVerlauf implements TemperaturVerlaufInterface{
 
     private List<Messpunkt> messpunkte;
     private final List<PropertyChangeListener> changeListenerList = new ArrayList<>();
