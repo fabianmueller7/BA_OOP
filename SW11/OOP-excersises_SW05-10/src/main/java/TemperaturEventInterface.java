@@ -12,7 +12,7 @@ public interface TemperaturEventInterface {
      *
      * @return the event type as an {@code EventType} enumeration
      */
-    EventType getEventType();
+    TemperaturEventType getEventType();
 
     /**
      * Gets the new temperature value associated with the event.

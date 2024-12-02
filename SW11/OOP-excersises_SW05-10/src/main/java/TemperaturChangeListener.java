@@ -6,5 +6,5 @@ public interface TemperaturChangeListener {
      * @param evt the {@code TemperatureEventInterface} object containing information about
      *            the temperature change event (cannot be null)
      */
-    void temperatureChange(TemperaturEventInterface evt);
+    void temperaturChange(TemperaturEventInterface evt);
 }

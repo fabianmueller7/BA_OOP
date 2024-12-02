@@ -12,7 +12,7 @@ public class mainTemp {
 
         final Logger LOG = LoggerFactory.getLogger(main.class);
         User listener = new User("listener1");
-        temperaturVerlauf.addPropertyChangeListener(listener);
+        temperaturVerlauf.addPropertyChangeListener(listener::temeperaturChange);
 
         Filehandler filehandler = new Filehandler();
         String filepath = "/Users/muellefa/repos/BA_OOP/SW11/OOP-excersises_SW05-10/src/main/java/out/temp.dat";

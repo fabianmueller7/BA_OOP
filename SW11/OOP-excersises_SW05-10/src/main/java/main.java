@@ -14,7 +14,7 @@ public class main {
 
         final Logger LOG = LoggerFactory.getLogger(main.class);
         User listener = new User("listener1");
-        temperaturVerlauf.addPropertyChangeListener(listener);
+        temperaturVerlauf.addPropertyChangeListener(listener::temeperaturChange);
 
         do {
             System.out.println("Bitte Temperatur eingeben (oder 'exit' zum Beenden): ");

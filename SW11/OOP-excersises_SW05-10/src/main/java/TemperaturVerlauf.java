@@ -9,7 +9,7 @@ import java.util.List;
 public class TemperaturVerlauf implements TemperaturVerlaufInterface{
 
     private List<Messpunkt> messpunkte;
-    private final List<PropertyChangeListener> changeListenerList = new ArrayList<>();
+    private final List<TemperaturChangeListener> changeListenerList = new ArrayList<>();
 
     TemperaturVerlauf() {
         this.messpunkte = new ArrayList<>();
@@ -23,7 +23,7 @@ public class TemperaturVerlauf implements TemperaturVerlaufInterface{
         return this.messpunkte.get(this.messpunkte.indexOf(messpunkt));
     }
 
-    public void addPropertyChangeListener(final PropertyChangeListener listener) {
+    public void addPropertyChangeListener(final TemperaturChangeListener listener) {
         if(listener != null) {
             this.changeListenerList.add(listener);
         }
@@ -66,16 +66,16 @@ public class TemperaturVerlauf implements TemperaturVerlaufInterface{
                 TemperaturEventType tempcase = TemperaturEventType.TemperaturMax;
                 if (oldMin.getCelsius() != newMin.getCelsius()) {
                     tempcase = TemperaturEventType.TemperaturMin;
-                    final PropertyChangeEvent tcEvent = new PropertyChangeEvent(
-                            this, tempcase.getAction(), oldMin, newMin) {
+                    final TemperaturMinEvent tcEvent = new TemperaturMinEvent(
+                            this, oldMin, newMin) {
                     };
                     this.firePropertyChangeEvent(tcEvent);
                 }
 
                 if (oldMax .getCelsius()!= newMax.getCelsius()) {
                     tempcase = TemperaturEventType.TemperaturMax;
-                    final PropertyChangeEvent tcEvent = new PropertyChangeEvent(
-                            this, tempcase.getAction(), oldMax, newMax) {
+                    final TemperaturMaxEvent tcEvent = new TemperaturMaxEvent(
+                            this, oldMax, newMax) {
                     };
                     this.firePropertyChangeEvent(tcEvent);
                 }
@@ -132,9 +132,9 @@ public class TemperaturVerlauf implements TemperaturVerlaufInterface{
         return (float) sum / (float) this.messpunkte.size();
     }
 
-    private void firePropertyChangeEvent(final PropertyChangeEvent pcEvent) {
-        for (final PropertyChangeListener listener : this.changeListenerList) {
-            listener.propertyChange(pcEvent);
+    private void firePropertyChangeEvent(final TemperaturEventInterface pcEvent) {
+        for (final TemperaturChangeListener listener : this.changeListenerList) {
+            listener.temperaturChange(pcEvent);
         }
     }
 

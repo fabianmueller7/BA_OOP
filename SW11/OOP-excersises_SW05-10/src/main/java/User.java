@@ -1,7 +1,7 @@
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
-public class User implements PropertyChangeListener {
+public class User {
 
     private String name;
 
@@ -13,20 +13,19 @@ public class User implements PropertyChangeListener {
         return name;
     }
 
-    public void propertyChangeMax(PropertyChangeEvent evt) {
-        System.out.println(evt.getPropertyName() + ": " + evt.getNewValue());
+    public void propertyChangeMax(TemperaturMaxEvent evt) {
+        System.out.println("New Max: " + evt.getOldValue().getCelsius() + ": " + evt.getNewValue().getCelsius());
     }
 
-    public void propertyChangeMin(PropertyChangeEvent evt) {
-        System.out.println(evt.getPropertyName() + ": " + evt.getNewValue());
+    public void propertyChangeMin(TemperaturMinEvent evt) {
+        System.out.println("New Min: " + evt.getOldValue().getCelsius() + ": " + evt.getNewValue().getCelsius());
     }
 
-    @Override
-    public void propertyChange(PropertyChangeEvent evt) {
-        if(evt.getPropertyName().equals("Max")) {
-            this.propertyChangeMax(evt);
+    public void temeperaturChange(TemperaturEventInterface evt) {
+        if(evt.getEventType().equals(TemperaturEventType.TemperaturMax)) {
+            this.propertyChangeMax((TemperaturMaxEvent) evt);
         } else {
-            this.propertyChangeMin(evt);
+            this.propertyChangeMin((TemperaturMinEvent)evt);
         }
     }
 }
