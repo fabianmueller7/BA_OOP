@@ -19,11 +19,11 @@ class loopsTest {
 
     @Test
     void switchCase() {
-        assertEquals("ROT", loopsObj.switchCase("rot"), "Expected 'ROT' for input 'rot'");
-        assertEquals("GRÜN", loopsObj.switchCase("grün"), "Expected 'GRÜn' for input 'grün'");
-        assertEquals("BLAU", loopsObj.switchCase("blau"), "Expected 'BLAU' for input 'blau'");
-        assertEquals("unbekannt", loopsObj.switchCase("gelb"), "Expected 'unbekannt' for unknown input");
-        assertEquals("unbekannt", loopsObj.switchCase(""), "Expected 'unbekannt' for empty input");
+        assertEquals("ROT", loopsObj.SwitchCase("rot"), "Expected 'ROT' for input 'rot'");
+        assertEquals("GRÜN", loopsObj.SwitchCase("grün"), "Expected 'GRÜn' for input 'grün'");
+        assertEquals("BLAU", loopsObj.SwitchCase("blau"), "Expected 'BLAU' for input 'blau'");
+        assertEquals("unbekannt", loopsObj.SwitchCase("gelb"), "Expected 'unbekannt' for unknown input");
+        assertEquals("unbekannt", loopsObj.SwitchCase(""), "Expected 'unbekannt' for empty input");
     }
 
 

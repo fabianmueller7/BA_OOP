@@ -7,7 +7,7 @@ public class Loops {
 
     Loops(){}
 
-    public String switchCase(String input) {
+    public String SwitchCase(String input) {
         String output = switch (input) {
             case "rot" -> "ROT";
             case "grün" -> "GRÜN";

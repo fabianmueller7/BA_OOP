@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac723bcf-2284-4fe4-b704-484646d10074" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../SW02/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SW02/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SW02/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SW03/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SW03/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SW03/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/loops/Loops.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/numbers_handling/Datatype_handling.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/loops/loopsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/numbers_handling/datatype_handlingTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/inheritance/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/inheritance/Switchable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/inheritance/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/loops/Loops.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/loops/Loops.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/loops/loopsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/loops/loopsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +20,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -46,6 +43,8 @@
     &quot;JUnit.datatype_handlingTest.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.datatype_handlingTest.roundFloat.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.loopsTest.continueBreak.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.loopsTest.foreach.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.loopsTest.switchCase.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
@@ -182,7 +181,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1735565079677</updated>
-      <workItem from="1735565080724" duration="3921000" />
+      <workItem from="1735565080724" duration="6478000" />
     </task>
     <servers />
   </component>
