@@ -28,9 +28,9 @@ module ch.hslu.oop.exercise.guisamples {
 
     requires org.slf4j;
 
-    opens ch.hslu.oop.exercise.common;
-    opens ch.hslu.oop.exercise.gui.javafx;
-    opens ch.hslu.oop.exercise.gui.javafxml;
+    //opens ch.hslu.oop.exercise.common;
+    //opens ch.hslu.oop.exercise.gui.javafx;
+    //opens ch.hslu.oop.exercise.gui.javafxml;
 
-    exports ch.hslu.oop.exercise.gui.javafxml to javafx.fxml;
+    exports Motor to javafx.fxml;
 }

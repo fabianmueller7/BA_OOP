@@ -76,7 +76,7 @@
         <argLine>-Xms512m -Xmx1g -Xss10m</argLine>
 
         <!-- Hier ggf. andere Startklasse anpassen! -->
-        <jar.start.class>ch.hslu.oop.exercise.gui.javafxml.SwitchGuiJavaFxmlDemo</jar.start.class>
+        <jar.start.class>Motor.MotorControl</jar.start.class>
 
         <scm.group.name>oop</scm.group.name>
         <scm.developer.uid>rgisler</scm.developer.uid>
