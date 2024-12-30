@@ -16,4 +16,12 @@ public class Car extends Vehicle {
     public boolean IsSwitchedOff() {
         return currentSpeed == 0 && this.IsSwitchedOff();
     }
+
+    public int getCurrentSpeed() {
+        return currentSpeed;
+    }
+
+    public void setCurrentSpeed(int currentSpeed) {
+        this.currentSpeed = currentSpeed;
+    }
 }
