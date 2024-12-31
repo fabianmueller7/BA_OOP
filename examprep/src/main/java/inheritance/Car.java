@@ -24,4 +24,9 @@ public class Car extends Vehicle {
     public void setCurrentSpeed(int currentSpeed) {
         this.currentSpeed = currentSpeed;
     }
+
+    @Override
+    public String getManufacturer() {
+        return "Carmanufacturer";
+    }
 }

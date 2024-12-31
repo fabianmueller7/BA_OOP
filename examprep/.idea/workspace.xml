@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac723bcf-2284-4fe4-b704-484646d10074" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/inheritance/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/inheritance/Switchable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/inheritance/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/overloading/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/override/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/override/PersonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SW06/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SW06/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/loops/Loops.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/loops/Loops.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/loops/loopsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/loops/loopsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +19,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -37,30 +36,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.PointTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.datatype_handlingTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.datatype_handlingTest.roundFloat.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.loopsTest.continueBreak.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.loopsTest.foreach.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.loopsTest.switchCase.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/muellefa/repos/BA_OOP/examprep&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.PersonTest.testToString.executor": "Run",
+    "JUnit.PointTest.executor": "Run",
+    "JUnit.datatype_handlingTest.executor": "Run",
+    "JUnit.datatype_handlingTest.roundFloat.executor": "Run",
+    "JUnit.loopsTest.continueBreak.executor": "Run",
+    "JUnit.loopsTest.foreach.executor": "Run",
+    "JUnit.loopsTest.switchCase.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/muellefa/repos/BA_OOP/examprep",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.general",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/examples/datatype handling" />
@@ -75,7 +75,23 @@
       <recent name="datatype_handling" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.loopsTest.foreach">
+  <component name="RunManager" selected="JUnit.PersonTest.testToString">
+    <configuration name="PersonTest.testToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oop_exam" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="override.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="override" />
+      <option name="MAIN_CLASS_NAME" value="override.PersonTest" />
+      <option name="METHOD_NAME" value="testToString" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="datatype_handlingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="oop_exam" />
       <extension name="coverage">
@@ -87,22 +103,6 @@
       <option name="PACKAGE_NAME" value="numbers_handling" />
       <option name="MAIN_CLASS_NAME" value="numbers_handling.datatype_handlingTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="datatype_handlingTest.roundFloat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="oop_exam" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="numbers_handling.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="datatype_handling" />
-      <option name="MAIN_CLASS_NAME" value="numbers_handling.datatype_handlingTest" />
-      <option name="METHOD_NAME" value="roundFloat" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -157,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PersonTest.testToString" />
         <item itemvalue="JUnit.loopsTest.foreach" />
         <item itemvalue="JUnit.loopsTest.switchCase" />
         <item itemvalue="JUnit.loopsTest.continueBreak" />
         <item itemvalue="JUnit.datatype_handlingTest" />
-        <item itemvalue="JUnit.datatype_handlingTest.roundFloat" />
       </list>
     </recent_temporary>
   </component>
@@ -181,7 +181,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1735565079677</updated>
-      <workItem from="1735565080724" duration="6478000" />
+      <workItem from="1735565080724" duration="9337000" />
+      <workItem from="1735638183294" duration="13000" />
+      <workItem from="1735651999556" duration="1148000" />
     </task>
     <servers />
   </component>
