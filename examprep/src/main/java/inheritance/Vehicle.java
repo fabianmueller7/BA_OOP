@@ -24,7 +24,7 @@ public abstract class Vehicle implements Switchable {
 
     abstract public boolean IsSwitchedOff();
 
-    public String getManufacturer() {
+    final public String getManufacturer() {
         return manufacturer;
     }
 }
