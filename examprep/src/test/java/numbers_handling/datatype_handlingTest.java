@@ -19,6 +19,9 @@ class datatype_handlingTest {
         float numberf = 0.12345f;
         numberf = this.handlerObj.roundFloat(numberf);
         assertEquals(0.12f, numberf);
+        assertNotEquals(0.12345f, numberf);
+        assertTrue(numberf == 0.12f);
+        assertFalse(numberf == 0.12345f);
     }
 
     @Test

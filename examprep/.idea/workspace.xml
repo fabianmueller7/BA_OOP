@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac723bcf-2284-4fe4-b704-484646d10074" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/overloading/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/override/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/override/PersonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/exceptionhandling/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/exceptionhandling/PersonTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SW06/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SW06/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/numbers_handling/datatype_handlingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/numbers_handling/datatype_handlingTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
         <option value="JUnit5 Test Class" />
       </list>
@@ -38,6 +39,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.PersonTest.setGender.executor": "Run",
+    "JUnit.PersonTest.setName.executor": "Debug",
     "JUnit.PersonTest.testToString.executor": "Run",
     "JUnit.PointTest.executor": "Run",
     "JUnit.datatype_handlingTest.executor": "Run",
@@ -71,11 +74,45 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="exceptionhandling" />
+      <recent name="override" />
       <recent name="loops" />
       <recent name="datatype_handling" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PersonTest.testToString">
+  <component name="RunManager" selected="JUnit.PersonTest.setName">
+    <configuration name="PersonTest.setGender" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oop_exam" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exceptionhandling.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="exceptionhandling" />
+      <option name="MAIN_CLASS_NAME" value="exceptionhandling.PersonTest" />
+      <option name="METHOD_NAME" value="setGender" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonTest.setName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oop_exam" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exceptionhandling.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="exceptionhandling" />
+      <option name="MAIN_CLASS_NAME" value="exceptionhandling.PersonTest" />
+      <option name="METHOD_NAME" value="setName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PersonTest.testToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="oop_exam" />
       <extension name="coverage">
@@ -92,7 +129,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="datatype_handlingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="datatype_handlingTest.roundFloat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="oop_exam" />
       <extension name="coverage">
         <pattern>
@@ -102,22 +139,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="numbers_handling" />
       <option name="MAIN_CLASS_NAME" value="numbers_handling.datatype_handlingTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="loopsTest.continueBreak" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="oop_exam" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="loops.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="loops" />
-      <option name="MAIN_CLASS_NAME" value="loops.loopsTest" />
-      <option name="METHOD_NAME" value="continueBreak" />
+      <option name="METHOD_NAME" value="roundFloat" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -139,29 +161,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="loopsTest.switchCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="oop_exam" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="loops.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="loops" />
-      <option name="MAIN_CLASS_NAME" value="loops.loopsTest" />
-      <option name="METHOD_NAME" value="switchCase" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PersonTest.setName" />
+        <item itemvalue="JUnit.PersonTest.setGender" />
+        <item itemvalue="JUnit.datatype_handlingTest.roundFloat" />
         <item itemvalue="JUnit.PersonTest.testToString" />
         <item itemvalue="JUnit.loopsTest.foreach" />
-        <item itemvalue="JUnit.loopsTest.switchCase" />
-        <item itemvalue="JUnit.loopsTest.continueBreak" />
-        <item itemvalue="JUnit.datatype_handlingTest" />
       </list>
     </recent_temporary>
   </component>
@@ -183,7 +189,7 @@
       <updated>1735565079677</updated>
       <workItem from="1735565080724" duration="9337000" />
       <workItem from="1735638183294" duration="13000" />
-      <workItem from="1735651999556" duration="1148000" />
+      <workItem from="1735651999556" duration="8747000" />
     </task>
     <servers />
   </component>
