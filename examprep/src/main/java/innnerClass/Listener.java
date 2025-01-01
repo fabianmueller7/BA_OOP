@@ -7,7 +7,7 @@ public class Listener {
 
     private Caller caller = new Caller();
 
-    private void handleMotorEvent(String message, PropertyChangeEvent event) {
+    private void handleCallerEvent(String message, PropertyChangeEvent event) {
         System.out.println(message + event.getPropertyName());
     }
 
@@ -16,7 +16,7 @@ public class Listener {
 
         @Override
        public void propertyChange(final PropertyChangeEvent e) {
-            handleMotorEvent("Event from engine", e);
+            handleCallerEvent("Event from engine", e);
        }
     }
 
@@ -26,7 +26,7 @@ public class Listener {
 
             @Override
             public void propertyChange(final PropertyChangeEvent e) {
-                handleMotorEvent("Event from engine", e);
+                handleCallerEvent("Event from engine", e);
             }
         });
     }
